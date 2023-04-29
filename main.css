@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Kalam', cursive;
+}
+body{
+    background:linear-gradient(rgba(0, 0, 0, 0.667),rgba(0, 0, 0, 0.667)),url(back.jpg) fixed center;
+    background-size:cover;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+header{
+   background: linear-gradient(
+        to right,
+        white 0%,
+        white 60%,
+        black 30%,
+        black 100%
+  );
+  opacity: 80%;
+  font-family: 'Caveat', cursive;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    opacity: 60%;
+}
+.nav-menu{
+    display:flex;
+    gap: 30px;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+}
+.nav-item{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.nav-brand{
+    font-size: 1.9rem;
+    margin-left: 34px;
+    position: absolute;
+    left:80px;
+}
+li{
+    list-style: none;
+}
+.ha{
+    text-decoration: none;
+    color:white;
+    font-size: 1.3rem;
+    font-family: 'MuseoModerno', cursive;
+}
+.nav-item:hover{
+    font-size: 1.5rem;
+    background-color:gold;
+    border-radius: 30px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color:white;
+}
+@media(max-width:800px){
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .greetings.active{
+        display: none;
+    }
+    .Container.active{
+        display: none;
+    }
+    .scl_row{
+        top: 30px;
+    }
+    .nav-brand{
+        font-size: 1.5rem;
+    }
+}
+
+
+.greetings{
+    text-align: center;
+    position: relative;
+    top: 110px;
+}
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 160px;
+    color: black;
+}
+.icon{
+    position: relative;
+    bottom: 30px;
+    width: 60px;
+    height:60px;
+    color: #fff;
+    background: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 1s;
+}
+.content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    text-align: center;
+    color:whitesmoke;
+}
+.box1{
+    position: relative;
+    width: 230px;
+    padding: 40px;
+    background:linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.508)),url(School.jpg);
+    border-radius: 6px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box1:hover{
+    width: 330px;
+    height: 330px;
+}
+.Container .box2{
+    position: relative;
+    width: 230px;
+    padding: 40px;
+    background:linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.508)),url(College.jpg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.413);
+    border-radius: 6px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box2:hover{
+    width: 330px;
+    height:330px;
+
+}
+.box1:hover .exp{
+    margin-top:120px;
+}
+.box2:hover .exp{
+    margin-top:120px;
+}
+.box3:hover .exp{
+    margin-top:120px;
+}
+.box4:hover .exp{
+    margin-top:120px;
+}
+.Container .box3{
+    position: relative;
+    width: 230px;
+    padding: 40px;
+    background:linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.508)),url(Hotel.jpg) center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.413);
+    border-radius: 6px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box3:hover{
+    width: 330px;
+    height: 330px;
+}
+.Container .box4{
+    position: relative;
+    width: 230px;
+    padding: 40px;
+    background:linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.508)),url(Sugam\ multi\ speciality\ .jpg)center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.413);
+    border-radius: 6px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box4:hover{
+    width: 330px;
+    height: 330px;
+}
+.exp{
+    display: inline-block;
+    padding: 10px 20px;
+    background:royalblue;
+    border-radius: 6px;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.greet{
+    font-size: 2.2rem;
+    color:darkblue;
+}
+.sp{
+    color:darkred;
+    font-size: 3.4rem;
+    text-decoration: underline;
+}
+h2{
+    font-size: 2.3rem;
+    position: relative;
+    bottom: 10px;
+    font-weight: 700;
+    color:white;
+    font-family: 'Poiret One', cursive;
+}
+.vnblogo{
+    width: 110px;
+    height: 70px;
+    display: flex;
+    float: left;
+}
